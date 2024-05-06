@@ -1,0 +1,129 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+.lista_libros{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 0 auto;
+    max-width: 920px;
+    list-style: none;
+
+}
+.lista_libros_item{
+    padding: .5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: .5rem;
+
+}
+
+.item_imagen_container{
+    width: 240px;
+   height: 140px;
+   overflow: hidden;
+   object-fit: cover;
+   border-radius: .5rem;
+}
+.item_imagen_container img{
+    width: 100%;
+    border-radius: .5rem;
+}
+.lista_libros_item h4{
+    margin-top: 2px;
+    margin-right: 8px;
+    font-size: .8rem;
+    text-align: right;
+    
+}
+.lista_libros_item h3{
+    margin-left: 2px;
+    font-size: 1.4rem;
+    padding-bottom: .8rem;
+}
+
+.card_footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 6px;
+}
+
+
+/* Modal styles */
+.modal {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+    display: none;
+}
+.close {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+
+}
+.form_nuevo_libro {
+    display: flex;
+    flex-direction: column;
+    max-width: 420px;
+    padding: 1rem;
+    gap: 1rem;
+
+}
+
+.form_nuevo_libro h2 {
+    text-align: center;
+}
+
+.form_nuevo_libro label {
+    font-size: 14px;
+
+}
+
+.form_nuevo_libro input {
+    width: 100%;
+    height: 36px;
+    border: none;
+    outline: none;
+    padding: 0 .5rem;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    border-radius: .3rem;
+    margin-top: 4px;
+    font-size: 1.1rem;
+}
+
+.form_nuevo_libro button {
+    height: 36px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: .5rem;
+    background-color: #0095ff;
+    border: none;
+    font-size: 1.2rem;
+    color: rgb(237, 237, 237);
+    border-radius: .3rem;
+    cursor: pointer;
+}
+
+.form_nuevo_libro button:hover{
+    background-color:#00a2ff ;
+}
+.form_nuevo_libro button:active{
+    background-color:#0048ff; ;
+}
