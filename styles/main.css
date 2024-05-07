@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 
-main{
+main {
     width: 100%;
     min-height: 100vh;
 }
 
-.lista_libros{
+.lista_libros {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -18,40 +18,76 @@ main{
     margin: 0 auto;
     max-width: 920px;
     list-style: none;
-
+    justify-content: space-evenly;
+    margin-top:  2.5rem;
 }
-.lista_libros_item{
+
+.lista_libros_item {
     padding: .5rem;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
     border-radius: .5rem;
-
+    position: relative;
+    cursor: pointer;
 }
 
-.item_imagen_container{
+.item_imagen_container {
     width: 240px;
-   height: 140px;
-   overflow: hidden;
-   object-fit: cover;
-   border-radius: .5rem;
+    overflow: hidden;
+    object-fit: cover;
+    border-radius: .5rem;
 }
-.item_imagen_container img{
+
+.item_imagen_container img {
     width: 100%;
     border-radius: .5rem;
 }
-.lista_libros_item h4{
+
+.item_info {
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    padding: .5rem;
+    width: 100%;
+    animation: scale-up-vertical-bottom 0.4s ease-in-out ;
+}
+
+.lista_libros_item:hover .item_info {
+    display: block;
+   
+}
+
+ 
+
+ 
+@keyframes scale-up-vertical-bottom {
+    0% {
+        transform: scaleY(0);
+        transform-origin: center bottom
+    }
+
+    100% {
+        transform: scaleY(1);
+        transform-origin: center bottom
+    }
+}
+
+.lista_libros_item h4 {
     margin-top: 2px;
     margin-right: 8px;
     font-size: .8rem;
     text-align: right;
-    
+
 }
-.lista_libros_item h3{
+
+.lista_libros_item h3 {
     margin-left: 2px;
     font-size: 1.4rem;
     padding-bottom: .8rem;
 }
 
-.card_footer{
+.card_footer {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -69,6 +105,7 @@ main{
     min-height: 100vh;
     display: none;
 }
+
 .close {
     position: absolute;
     top: 2rem;
@@ -78,6 +115,7 @@ main{
     background-color: transparent;
 
 }
+
 .form_nuevo_libro {
     display: flex;
     flex-direction: column;
@@ -121,9 +159,21 @@ main{
     cursor: pointer;
 }
 
-.form_nuevo_libro button:hover{
-    background-color:#00a2ff ;
+.form_nuevo_libro button:hover {
+    background-color: #00a2ff;
 }
-.form_nuevo_libro button:active{
-    background-color:#0048ff; ;
+
+.form_nuevo_libro button:active {
+    background-color: #0048ff;
+    ;
+}
+
+.add{
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 2rem;
+    right:   8rem;
+    cursor: pointer;
+
 }
