@@ -98,11 +98,11 @@ main {
 /* Modal styles */
 .modal {
     position: absolute;
-    display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     min-height: 100vh;
+    background-color: rgba(220, 220, 220, 0.46);
     display: none;
     top: 0;
     left: 0;
@@ -124,6 +124,8 @@ main {
     max-width: 420px;
     padding: 1rem;
     gap: 1rem;
+    background-color: white;
+    border-radius: .5rem;
 
 }
 
