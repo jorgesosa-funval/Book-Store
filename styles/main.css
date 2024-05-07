@@ -19,7 +19,7 @@ main {
     max-width: 920px;
     list-style: none;
     justify-content: space-evenly;
-    margin-top:  2.5rem;
+    margin-top: 2.5rem;
 }
 
 .lista_libros_item {
@@ -50,17 +50,17 @@ main {
     background-color: white;
     padding: .5rem;
     width: 100%;
-    animation: scale-up-vertical-bottom 0.4s ease-in-out ;
+    animation: scale-up-vertical-bottom 0.4s ease-in-out;
 }
 
 .lista_libros_item:hover .item_info {
     display: block;
-   
+
 }
 
- 
 
- 
+
+
 @keyframes scale-up-vertical-bottom {
     0% {
         transform: scaleY(0);
@@ -104,6 +104,8 @@ main {
     width: 100%;
     min-height: 100vh;
     display: none;
+    top: 0;
+    left: 0;
 }
 
 .close {
@@ -168,12 +170,12 @@ main {
     ;
 }
 
-.add{
+.add {
     background-color: transparent;
     border: none;
     position: fixed;
     top: 2rem;
-    right:   8rem;
+    right: 8rem;
     cursor: pointer;
 
 }
